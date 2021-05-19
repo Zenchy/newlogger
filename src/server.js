@@ -6,6 +6,10 @@ const app =  express()
 
 //Settings
 app.set(`port`, process.env.PORT || 8000)
-app.set('views', path.join(__dirname, `/views`))
+app.set('views', path.join(__dirname, `views`))
+
+//Routes
+
+//Static files
 
 module.exports = app
