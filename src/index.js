@@ -1,5 +1,5 @@
 const app = require('./server')
 
-app.listen(7000,()=>{
-  console.log('Zenchy on 7000')
+app.listen(app.get(`port`),()=>{
+  console.log(`Zenchy is on port ${app.get(`port`)}`)
 })
