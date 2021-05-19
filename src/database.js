@@ -1,6 +1,9 @@
 const mongoose = require('mongoose')
 
-const MONGO_URL = `mongodb://localhost/newlogger`
+const HOST = process.env.MONGO_HOST
+const DB = process.env.MONGO_DB
+
+const MONGO_URL = `mongodb://${HOST}/${DB}`
 
 mongoose.connect(MONGO_URL, {
   useNewUrlParser: true,
