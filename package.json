@@ -1,0 +1,19 @@
+{
+  "name": "newlogger",
+  "description": "**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/ironhacker/newlogger.git"
+  },
+  "author": "Zenchy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://bitbucket.org/ironhacker/newlogger/issues"
+  },
+  "homepage": "https://bitbucket.org/ironhacker/newlogger#readme"
+}
