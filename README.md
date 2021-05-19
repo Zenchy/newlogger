@@ -20,7 +20,7 @@ npm-check-update->ayuda a comprobar si hay nuevos modulos o actualizaciones
 
 Estructura de archivos:
 SRC:
-  indes.js->Archivo principal, arranca la aplicacion
+  index.js->Archivo principal, arranca la aplicacion
   serve.js->Archivo del servidor, con la ejecucion de express
   database.js->Archivo para interaccion con la BBDD, con la ejecucion de mongoose
   config->Carpeta de configuarion de modulos
