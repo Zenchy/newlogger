@@ -19,7 +19,8 @@
   },
   "homepage": "https://bitbucket.org/ironhacker/newlogger#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.12.10"
   },
   "devDependencies": {
     "dotenv": "^9.0.2",
