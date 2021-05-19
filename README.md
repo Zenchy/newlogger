@@ -1,3 +1,36 @@
+.gitignore:
+package*
+
+Modulos funcionales:
+express->crear servidor
+morgan-> mensajes por consola sobre los json enviados
+connect-flash->almacena mensajes entre paginas
+bcryptjs->cifra textos contraseñas por ejemplo
+express-handlebars->ayuda a crear vistas html
+express-session->guarda datos en la memoria del servidor, util para el login
+method-override->para peticiones put y delete desde el formulario (si no no se puede)
+mongoose->comunicacion con la bbdd
+passport->para la autenticacion
+
+Modulos desarrollo:
+dotenv->para variables de entorno
+nodemon->reinicio dinamico con cambios
+handlebars->corrige un error de express-handlebars
+npm-check-update->ayuda a comprobar si hay nuevos modulos o actualizaciones
+
+Estructura de archivos:
+SRC:
+  indes.js->Archivo principal, arranca la aplicacion
+  serve.js->Archivo del servidor, con la ejecucion de express
+  database.js->Archivo para interaccion con la BBDD, con la ejecucion de mongoose
+  config->Carpeta de configuarion de modulos
+  controllers->Carpeta para almacenar funciones para la visita de rutas
+  helpers->Carpeta para funciones de la vista
+  model->Carpeta para almacenar los modelos de la bbdd
+  public->arpeta de archivos publicos/estaticos, CSS, imagenes, fuentes,i.e libre acceso del navegador
+  routes->Carpeta de rutas
+  Views->archivos de handlebars
+
 **Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**
 
 When you're done, you can delete the content in this README and update the file with details for others getting started with your repository.
