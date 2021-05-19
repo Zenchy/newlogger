@@ -35,6 +35,7 @@ Server file:
 Initialization
 Settings
 Middlewares
+Global variables
 Routes
 Static files
 
