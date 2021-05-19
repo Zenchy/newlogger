@@ -10,7 +10,7 @@ const userSchema = new Schema({
 })
 
 userSchema.methods.encryotPassword = password =>{
-  
+
 }
 
 module.exports = model ('User', userSchema)
