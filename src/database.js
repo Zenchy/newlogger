@@ -11,3 +11,4 @@ mongoose.connect(MONGO_URL, {
 })
 .then(db=> console.log('Database is working'))
 .catch(error=> console.log(error))
+
