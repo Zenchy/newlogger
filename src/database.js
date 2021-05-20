@@ -10,4 +10,4 @@ mongoose.connect(MONGO_URL, {
   useUnifiedTopology: true
 })
 .then(db=> console.log('Database is working'))
-.catch(err=> console.log(err))
+.catch(err=> console.log(error))
