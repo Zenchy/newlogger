@@ -22,11 +22,7 @@ PUT http://localhost:9500/api/hola/60a820bb1e84a7925a7a3347
 content-type: application/json
 
 {
-  "name": "Viejo",
-  "emails": "otro@gmsil.com",
-  "password": "ÑAAAAAAAA",
-  "cargo": "el peor de todoooos",
-  "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+  "password": "PUPUPUPUPUPUP"
 }
 
 ###
