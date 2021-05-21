@@ -10,5 +10,5 @@ mongoose.connect(MONGO_URL, {
   useUnifiedTopology: true
 })
 .then(db=> console.log('Database is working'))
-.catch(error=> console.log(error))
+.catch(error=> console.log('This is the error',error))
 

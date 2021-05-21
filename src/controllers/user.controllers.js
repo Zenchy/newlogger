@@ -1,12 +1,17 @@
-const UserShcema = require('../models/user')
+const User = require('../models/user')
 const UserControl = {}
-const app = require ('../server')
 
-UserControl.findUser = (req, res)=> {
-  // const users = UserShcema.find()
-  // res.json(users)
-  res.send('lololo')
- console.log('hihijninnhi')
+UserControl.getUsers = async(req, res)=> {
+  const users = await User.find()
+  res.json(users)
 }
+
+UserControl.postUser = async(req, res)=> {
+  const newUser = await new User({
+    name: req.body.name
+  })
+  await newUser.save();
+  await res.json({ status: "User created" });
+  }
 
 module.exports = UserControl

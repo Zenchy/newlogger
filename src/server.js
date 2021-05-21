@@ -1,6 +1,6 @@
 const express = require('express')
 const path = require('path')
-const UserControl = require(`./controllers/user.controllers`)
+const routes = require(`./routes/users.routes`)
 
 //Initialization
 const app =  express()
@@ -15,7 +15,7 @@ app.use(express.urlencoded({extended:false}))
 //Global variables
 
 //Routes
-app.get('/',require(`./routes/users.routes`))
+app.use('/api/hola', routes)
 
 //Static files
 app.use(express.static(path.join(__dirname, 'public')))
