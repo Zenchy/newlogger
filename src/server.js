@@ -1,6 +1,7 @@
 const express = require('express')
 const path = require('path')
 const routes = require(`./routes/users.routes`)
+const morgan = require('morgan')
 
 //Initialization
 const app =  express()
@@ -9,7 +10,9 @@ const app =  express()
 app.set(`port`, process.env.PORT || 8000)
 app.set('views', path.join(__dirname, `views`))
 
-//Middlewares
+//Middlewaresç
+app.use(morgan('dev'))
+app.use(express.json())
 app.use(express.urlencoded({extended:false}))
 
 //Global variables

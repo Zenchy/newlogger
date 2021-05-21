@@ -6,12 +6,24 @@ UserControl.getUsers = async(req, res)=> {
   res.json(users)
 }
 
-UserControl.postUser = async(req, res)=> {
-  const newUser = await new User({
+UserControl.postUser = (req, res)=> {
+  const newUser =  new User({
     name: req.body.name
   })
-  await newUser.save();
-  await res.json({ status: "User created" });
+  newUser.save();
+  res.json({ status: "User created" });
   }
+
+UserControl.getUser = (req, res)=>{
+  res.send('get User')
+}
+
+UserControl.putUser = (req, res)=> {
+  res.send('Put user')
+}
+
+UserControl.deleteUser = (req, res)=>{
+  res.send('delete user')
+}
 
 module.exports = UserControl
