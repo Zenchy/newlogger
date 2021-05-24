@@ -1,5 +1,5 @@
 ###
-GET http://localhost:9500/api/hola
+GET http://localhost:7000/api/hola
 
 ###
 
@@ -27,6 +27,6 @@ content-type: application/json
 
 ###
 
-DELETE http://localhost:9500/api/hola/60a8178162c948838ed36c0d
+DELETE http://localhost:7000/api/hola/60aaf659c3c5e7b462208da2
 
 ###
