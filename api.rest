@@ -1,0 +1,32 @@
+###
+GET http://localhost:7000/api/hola
+
+###
+
+POST http://localhost:9500/api/hola HTTP/1.1
+content-type: application/json
+
+{
+  "name": "Nuevo",
+  "emails": "zenchyquetecagas@gmsil.com",
+  "password": "nose puede saber",
+  "cargo": "elmejordelmundo",
+  "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+}
+
+###
+GET http://localhost:9500/api/hola/60a7192b5cc0a3de40e320c0
+
+###
+PUT http://localhost:9500/api/hola/60a820bb1e84a7925a7a3347
+content-type: application/json
+
+{
+  "password": "PUPUPUPUPUPUP"
+}
+
+###
+
+DELETE http://localhost:7000/api/hola/60aaf659c3c5e7b462208da2
+
+###
