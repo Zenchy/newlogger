@@ -21,7 +21,7 @@ app.use(cors())//cors({origin:"url_que_quiero"}) y encontes permite comunicacion
 //Global variables
 
 //Routes
-app.use('/api/', routes)
+app.use('/api/',cors(), routes)
 
 //Static files
 app.use(express.static(path.join(__dirname, 'public')))
