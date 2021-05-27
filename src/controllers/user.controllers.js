@@ -14,6 +14,7 @@ UserControl.postUser = async(req, res)=> {
     cargo: req.body.cargo,
   })
   await newUser.save();
+  await console.log('This is post RES', res)
   res.json({ status: "User created" });
   }
 
@@ -24,7 +25,7 @@ UserControl.getUser = async(req, res)=>{
 
 UserControl.putUser = async(req, res)=> {
   await User.findByIdAndUpdate(req.params.id, req.body)
-  res.send('Put user')
+  await res.json({status: 'updated db'})
 }
 
 UserControl.deleteUser = async(req, res)=>{
