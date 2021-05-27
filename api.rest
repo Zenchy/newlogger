@@ -1,9 +1,9 @@
 ###
-GET http://localhost:7000/api/hola
+GET http://localhost:7000/api/
 
 ###
 
-POST http://localhost:9500/api/hola HTTP/1.1
+POST http://localhost:9500/api/ HTTP/1.1
 content-type: application/json
 
 {
@@ -15,10 +15,10 @@ content-type: application/json
 }
 
 ###
-GET http://localhost:9500/api/hola/60a7192b5cc0a3de40e320c0
+GET http://localhost:9500/api//60a7192b5cc0a3de40e320c0
 
 ###
-PUT http://localhost:9500/api/hola/60a820bb1e84a7925a7a3347
+PUT http://localhost:9500/api//60a820bb1e84a7925a7a3347
 content-type: application/json
 
 {
@@ -27,6 +27,6 @@ content-type: application/json
 
 ###
 
-DELETE http://localhost:7000/api/hola/60aaf659c3c5e7b462208da2
+DELETE http://localhost:7000/api//60aaf659c3c5e7b462208da2
 
 ###

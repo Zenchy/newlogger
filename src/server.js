@@ -20,7 +20,7 @@ app.use(express.urlencoded({extended:false}))
 //Global variables
 
 //Routes
-app.use('/api/hola', routes)
+app.use('/api/', routes)
 
 //Static files
 app.use(express.static(path.join(__dirname, 'public')))
