@@ -1,11 +1,13 @@
 const mongoose = require('mongoose')
 
-const LHOST = process.env.MONGO_HOST
-const DB = process.env.MONGO_DB
+// const LHOST = process.env.MONGO_HOST
+// const DB = process.env.MONGO_DB
 
-const MONGO_URL = `mongodb://${LHOST}/${DB}`
+//const MONGO_URL = `mongodb://${LHOST}/${DB}`
+const MONGO_ATLAS = process.env.MONGO_ATLAS
 
-mongoose.connect(MONGO_URL, {
+
+mongoose.connect(MONGO_ATLAS, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useFindAndModify: false
