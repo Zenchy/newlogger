@@ -12,7 +12,7 @@ app.set(`port`, process.env.PORT || 8000)
 app.set('views', path.join(__dirname, `views`))
 
 //Middlewarea
-app.use(cors())//cors({origin:"url_que_quiero"}) y encontes permite comunicacion con esa URL en concreto
+app.use(cors({origin:"http://localhost:4200/"}))//cors({origin:"url_que_quiero"}) y encontes permite comunicacion con esa URL en concreto
 app.use(morgan('dev'))
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
