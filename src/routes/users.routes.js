@@ -1,9 +1,10 @@
 const { Router } = require('express')
 const router = Router()
+const cors = require('cors')
 
 const userControl = require(`../controllers/user.controllers`)
 
-router.get(`/`, userControl.getUsers)
+router.get(`/`, cors(), userControl.getUsers)
 
 router.post(`/`, userControl.postUser)
 
